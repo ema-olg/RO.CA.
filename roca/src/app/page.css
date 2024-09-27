@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+}
+
+.filtroN {
+    width: 100%;
+    height: 100%;
+    background-color: #000000ba;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.div-context {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 100;
+}
+
+.div-context>h1 {
+    color: #fff;
+    margin-top: 34vh;
+    font-size: 320%;
+    font-family: "Anton";
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-align: center;
+}
+.div-context>p{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 26px;
+    text-align: center;
+}
+
+.openClose{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .div-context>h1 {
+        font-size: 320%;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .div-context>p{
+        font-size: 24px;
+    }
+    
+    .openClose{
+        width: 44px;
+        height: 44px;
+        background-color: blue;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+        z-index: 110;
+        transition: transform 0.5s;
+    }
+
+    .open{
+        transform: rotate(315deg);
+    }
+    .close{
+        transform: rotate(0deg);
+    }
+}

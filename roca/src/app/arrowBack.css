@@ -1,0 +1,9 @@
+.divBack{
+    width: 90vw;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    top: 8px;
+    z-index: 1000;
+}
